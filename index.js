@@ -133,9 +133,9 @@ export default class ModalSelector extends BaseComponent {
 
     renderOption(option, isLastItem) {
         return (
-            <TouchableOpacity key={option.key} onPress={() => this.onChange(option)}>
+            <TouchableOpacity key={option.key} onPress={() => this.onChange(option)} accessible accessibilityLabel={`modalSelectorOption-${option.label}`}>
                 <View style={[styles.optionStyle, this.props.optionStyle, isLastItem &&
-                {borderBottomWidth: 0}]} accessibilityLabel={`modalSelectorOption-${option.label}`}>
+                {borderBottomWidth: 0}]}>
                     <Text style={[styles.optionTextStyle,this.props.optionTextStyle]}>{option.label}</Text>
                 </View>
             </TouchableOpacity>);
