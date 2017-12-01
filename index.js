@@ -166,7 +166,7 @@ export default class ModalSelector extends BaseComponent {
                     </View>
                     <View style={[styles.cancelContainer, this.props.cancelContainerStyle]}>
                         <TouchableOpacity onPress={this.close}>
-                            <View style={[styles.cancelStyle, this.props.cancelStyle]} accessibilityLabel={`modalSelector-${this.props.cancelText}`}>
+                            <View style={[styles.cancelStyle, this.props.cancelStyle]} accessibilityLabel={`modalSelector-${this.props.cancelText}`}}>
                                 <Text style={[styles.cancelTextStyle,this.props.cancelTextStyle]}>{this.props.cancelText}</Text>
                             </View>
                         </TouchableOpacity>
